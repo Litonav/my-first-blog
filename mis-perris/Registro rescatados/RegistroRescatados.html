@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro De Mascotas</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="flexboxgrid.css" type="text/css">
+        <link rel="stylesheet" href="form2Style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+        <link class="jsbin" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+        <script src="validacionjquery.js"></script>
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+    </head>
+    <body style="background-color: #85d4b7">
+        <div class="row" id="colorheader">
+                <div class="col-xs-12 col-lg-4">
+                    <div class="header"><img src="img/logo.png" alt="logo" height="80%" width="80%"></div>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><strong>Inicio</strong></p></a>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><Strong>Quienes somos</Strong></p></a>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><strong>Servicios</strong></p></a>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><strong>Contactanos</strong></p></a>
+                </div>
+            </div>
+        <div class="container">
+            <div class="col-xs-12 col-lg-5" style="background-color: #85d4b7">
+                <form id="Form"action="#">
+                    <label for="foto" class="fl">Foto: </label>
+                    <input type='file' onchange="readURL(this);" class="fr"/>
+                    <img id="blah" src="#" alt="" />
+                    <br>
+                    <br>
+                    <label for="nombre" class="fl">Nombre: </label>
+                    <input type="text" required name="nombre" placeholder="Ingrese nombre" class="fr">
+                    <br>
+                    <br>
+                    <label for="raza" class="fl">Raza: </label>
+                    <input type="text" required name="raza" placeholder="Ingrese raza" class="fr">
+                    <br>
+                    <br>
+                    <label for="descripcion" class="fl">Descripcion: </label>
+                    <input type="text" required name="descripcion" placeholder="Ingrese una descipcion" class="fr">
+                    <br>
+                    <br>
+                    <label for="Estado" class="fl">Estado</label>
+                    <select required name="estado" class="fr">
+                        <option>Rescatado</option>
+                        <option>Disponible</option>
+                        <option>Adoptado</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="fl">Registrar</button>
+                </form>
+                <button onclick=goBack()>Volver</button> 
+            </div>
+        </div>
+    </body>
+</html>

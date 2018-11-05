@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<HTMl>
+    <html>
+    <head>
+        <title>MisPerrisResponsivo</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="flexboxgrid.css" type="text/css">
+        <link rel="stylesheet" href="StyleMisperris.css">
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+    </head>
+    <body>
+        <div class="row" id="colorheader">
+            <div class="col-xs-12 col-lg-4">
+                <div class="header"><img src="Formulario/img/logo.png" alt="logo" height="80%" width="80%"></div>
+            </div>
+            <div class="col-xs-12 col-lg-2">
+                <a href="#"><p><strong>Inicio</strong></p></a>
+            </div>
+            <div class="col-xs-12 col-lg-2">
+                <a href="#"><p><Strong>Quienes somos</Strong></p></a>
+            </div>
+            <div class="col-xs-12 col-lg-2">
+                <a href="#"><p><strong>Servicios</strong></p></a>
+            </div>
+            <div class="col-xs-12 col-lg-2">
+                <a href="#"><p><strong>Contactanos</strong></p></a>
+            </div>
+        </div>
+        <div class="row" id="colorimgperro">
+            <div class="col-xs-12 col-lg-12 w3-content w3-section" id="perros">
+                <img class="DoggoSlides w3-animate-fading" src="Formulario/img/doggo.jpg" alt="perro">
+                <img class="DoggoSlides w3-animate-fading" src="Formulario/img/doggo2.jpg" alt="perro">
+                <img class="DoggoSlides w3-animate-fading" src="Formulario/img/doggo3.jpg" alt="perro">
+                 
+            </div>            
+        </div>
+        <script>
+                var slideIndex = 0;
+                carousel();
+
+                function carousel(){
+                var i;
+                var x = document.getElementsByClassName("DoggoSlides");
+                for (i=0; i < x.length; i++){
+                    x[i].style.display = "none";
+                }
+                slideIndex++;
+                if(slideIndex > x.length) {slideIndex = 1}
+                x[slideIndex-1].style.display = "block";
+                setTimeout(carousel,4000);
+            }
+        </script>
+        <div class="row" id="div3">
+            <div class="col-xs-12 col-lg-12">
+                <center>
+                    <a href="#"><img src="Formulario/img/logoFacebooknegro.png" alt="logoface" height="40px" width="40px"></a>
+                    <a href="#"><img src="Formulario/img/google+3.jpg" alt="google" height="40px" width="40px"></a> 
+                    <a href="#"><img src="Formulario/img/Instagram-blanco.png" alt="insta" height="40px" width="40px"></a>  
+                    <a href="#"><img src="Formulario/img/emaillogo2.png" alt="email" height="35px" width="35px"></a>
+                </center>
+           
+            </div>   
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-6" id="alinearderecha">
+                <h2><strong>RESCATE</strong></h2>
+                <h4 style="color: grey">ETAPA UNO</h4>
+                <hr size="3"width="20%" align="right" color="grey">
+                <P>Rescatamos perros en situacio de peligro y/o abandono. los rehabilitamos y los <br> preparamos para buscarles un hogar</P>
+                <img src="Formulario/img/rescate.jpg" alt="rescate" height="40%" width="40%">
+            </div>
+            <div class="col-xs-12 col-lg-6" id="alinearizquierda">
+                <img src="Formulario/img/crowfunding.jpg" alt="crowd" height="40%" width="40%">
+                <h2><strong>CROWDFUNDING</strong></h2>
+                <h4 style="color: grey">FINANCIAMIENTO</h4>
+                <hr size="3"width="20%" align="left" color="grey">
+                <p>Sigue nuestras redes sociales para informarte acerca de las diversas campañas y <br> actividades que realizamos para obtenner financiamiento para seguir ayudando</p>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                <P><strong>Para registrar una mascota nueva presiona </strong><a href="Registro rescatados/RegistroRescatados.html" style="color: green"><strong>AQUI</strong></a></P>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-xs-12 col-lg-12">
+                <P><strong>Para postular presiona </strong><a href="Formulario/Formulario.html" style="color: blue"><strong>AQUI</strong></a></P>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-lg-12" class="campañas">
+                <a href="#"><h2 class="col-xs-2 col-lg-2" style="padding-bottom: 1%"><strong style="border-style: solid; color: black; float: left;">CAMPAÑAS</strong></h2></a>
+            </div>
+        </div>
+        <div class="row" id="collageperritos">
+            <div class="col-xs-4 col-lg-4" style="text-align: right;">
+                <img class="perritocollage" src="Formulario/img/Bigotes.jpg" width="100%">
+                <img class="perritocollage" src="Formulario/img/Chocolate.jpg" width="100%">
+                
+            </div>
+            <div class="col-xs-4 col-lg-4" style="margin-top: 5%; text-align: center; padding: 5px;">
+                <img class="perritocollage" src="Formulario/img/Maya.jpg" width="100%">
+                <img class="perritocollage" src="Formulario/img/Oso.jpg" width="100%">
+                <img class="perritocollage" src="Formulario/img/Luna.jpg" width="100%">
+            </div>
+            <div class="col-xs-4 col-lg-4" style="text-align: left;">
+                <img class="perritocollage" src="Formulario/img/Pexel.jpg" width="100%">
+                <img class="perritocollage" src="Formulario/img/Wifi.jpg" width="100%">                
+                <img class="perritocollage" src="Formulario/img/shibe.jpeg" width="100%">
+            </div>
+                      
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-lg-12" style="background-color: rgb(187, 185, 185); margin: auto;">
+                <h3 style="color: grey;">Desarrollo Web y Mobile</h3>
+            </div>
+        </div>
+    </body>
+    
+</HTMl>

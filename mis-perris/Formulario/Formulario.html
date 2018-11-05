@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="flexboxgrid.css" type="text/css">
+        <link rel="stylesheet" href="FormStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.js"></script>
+        <script src="jquery.js"></script>
+        <script src="jqueryreg.js"></script>
+        <script>
+            function goBack() {
+                window.history.back()
+            }
+        </script>
+    </head>
+    <body style="background-color: #85d4b7">
+        <div class="row" id="colorheader">
+                <div class="col-xs-12 col-lg-4">
+                    <div class="header"><img src="img/logo.png" alt="logo" height="80%" width="80%"></div>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><strong>Inicio</strong></p></a>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><Strong>Quienes somos</Strong></p></a>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><strong>Servicios</strong></p></a>
+                </div>
+                <div class="col-xs-12 col-lg-2">
+                    <a href="#"><p><strong>Contactanos</strong></p></a>
+                </div>
+            </div>
+        <div class="container">
+            <div class="col-xs-12 col-lg-5" style="background-color: #85d4b7">
+                <form id="Form" action="#">
+                    <label for="usuario">Usuario: </label>
+                    <input type="text" required name="usuario" placeholder="Ingrese nombre de usuario" class="fl">
+                    <br>
+                    <br>
+                    <label for="contraseña">Contraseña: </label>
+                    <input type="text" required name="contraseña" placeholder="Ingrese contraseña" class="fl">
+                    <br>
+                    <br>
+                    <label for="confirmarContraseña">Confirmar contraseña: </label>
+                    <input type="text" required name="confirmar contraseña" placeholder="Confirme contraseña" class="fl">
+                    <br>
+                    <br>
+                    <label for="correo">Correo electronico: </label>
+                    <input type="text" required name="correo" placeholder="Direccion de correo" class="fl">
+                    <br>
+                    <br>
+                    <label for="run">Run: </label>
+                    <input type="text" required name="run" placeholder="ingrese rut" class="fl">
+                    <br>
+                    <br>
+                    <label for="nombre">Nombre completo: </label>
+                    <input type="text" required name="nombre" placeholder="Ingrese nombre" class="fl">
+                    <br>
+                    <br>
+                    <label for="date">Fecha de nacimiento: </label>
+                    <input type="date" required name="date" class="fl">
+                    <br>
+                    <br>
+                    <label for="fono">Telefono de contacto: </label>
+                    <input type="number" name="fono" placeholder="Ingrese Numero" class="fl">
+                    <br>
+                    <br>
+                    <label for="region">Region: </label>
+                    <select required name="region" id="regiones"class="fl"></select>
+                    <br>
+                    <br>
+                    <label for="comuna">Comuna: </label>
+                    <select required name="Comuna" id="comunas" class="fl"></select>
+                    <br>
+                    <br>
+                    <label for="Vivienda">Vivienda: </label>
+                    <select required name="Vivienda" class="fl">
+                        <option>Casa con patio grande</option>
+                        <option>Casa con patio pequeño</option>
+                        <option>Casa sin patio</option>
+                        <option>Departamento</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="fl">Registrar</button>                    
+                </form>
+                <button onclick=goBack()>Volver</button>
+            </div>
+        </div>
+    </body>
+</html>

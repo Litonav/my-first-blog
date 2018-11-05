@@ -1,0 +1,101 @@
+.fl
+{
+    float: right
+}
+
+#colorheader
+{
+    background-color: #6dccaa;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+.header
+{
+    float: left;
+    height: 100%;
+    width: 100%;
+}
+
+a
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 100%;
+}
+a:hover {
+    color: grey;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#colorimgperro
+{
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #85d4b7;
+}
+
+#div3
+{
+    margin-left: 1%;
+    margin-right: 1%;
+    background-color: #6dccaa;
+}
+
+#alinearderecha
+{
+    text-align: right;
+    font-size: 100%;
+}
+
+#alinearizquierda
+{
+    text-align: left;
+    margin-top: 1%;
+    font-size: 100%;
+}
+
+.campañas
+{
+    font-size: 100%; 
+    float: left;
+    text-align: left;
+}
+.DoggoSlides{
+    max-height: 80%;
+    min-height: 80%;
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    transition: opacity .5s ease;
+}
+@media only screen and (max-width: 1000px){
+    .DoggoSlides{
+        width: 100%;
+    }
+}
+
+#collageperritos{
+    background-color: #85d4b7;
+}
+
+@media only screen and (max-width:1000px){
+    .perritocollage{
+        width: 100%;
+    }
+}
+
+.perritocollage{
+    padding-left: 0px;
+    padding-right: 0px;
+}
